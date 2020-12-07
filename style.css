@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 20px;
+    background-color: #ececec;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* HEADER */
+
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px ridge rgb(42, 140, 165);
+    margin: 20px 0;
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(147, 162, 177);
+    max-width: 1290px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: -10px;
+}
+
+header > div {
+    max-width: 400px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: -8px;
+}
+/* MATRIX */
+main, footer {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.phases {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phases > div {
+    margin: 10px auto;
+}
+
+/* FIX HEIGHT HERE TO MATCH WITH THE CARDS*/
+.phases > div h4 {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.phase_0 h4 {
+    background-color: rgb(92, 149, 182);
+}
+
+/* FIX HEIGHT HERE FOR THE CARDS - MATCH WITH DIV H4*/
+.journey > div {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.phase_1 h4, .phase_1 .journey  {
+    background-color: lightsteelblue;
+}
+
+.phase_2 .journey, .phase_2 h4 {
+    background: rgb(223, 126, 126);
+}
+
+.phase_3 h4, .phase_3 .journey {
+    background-color: rgb(245, 226, 143);
+}
+
+.phase_4 h4, .phase_4 .journey {
+    background-color:  rgb(80, 201, 161);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+}
+
+footer > div {
+    width: 640px;
+    padding: 20px;
+    background-color: rgb(222, 198, 176);
+}
+
+footer > div:first-child {
+    margin: 0px 10px 0 5px;
+}
+
+footer h4 {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .phases > div {
+        margin: auto;
+    }
+
+    header > div {
+        margin: auto;
+        padding: 0;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1350px) {
+    footer > div:first-child {
+        margin: 20px auto;
+    }
+
+    footer > div:last-child {
+        margin: auto;
+    }
+}
