@@ -5,7 +5,12 @@ body {
     margin: 20px;
     background-color: #ececec;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h4 {
+    font-size: 14px;
 }
 
 img {
@@ -41,7 +46,7 @@ header {
     margin-bottom: -10px;
 }
 
-header > div {
+header>div {
     max-width: 400px;
     margin: 20px 10px;
     padding: 20px;
@@ -51,8 +56,10 @@ h3 {
     margin: 0;
     margin-bottom: -8px;
 }
+
 /* MATRIX */
-main, footer {
+main,
+footer {
     max-width: 1300px;
     margin: auto;
 }
@@ -62,12 +69,12 @@ main, footer {
     flex-wrap: wrap;
 }
 
-.phases > div {
+.phases>div {
     margin: 10px auto;
 }
 
 /* FIX HEIGHT HERE TO MATCH WITH THE CARDS*/
-.phases > div h4 {
+.phases>div h4 {
     width: 250px;
     height: 100px;
     display: flex;
@@ -84,27 +91,31 @@ main, footer {
 }
 
 /* FIX HEIGHT HERE FOR THE CARDS - MATCH WITH DIV H4*/
-.journey > div {
+.journey>div {
     width: 250px;
     height: 100px;
     padding: 10px;
     margin: 10px 0;
 }
 
-.phase_1 h4, .phase_1 .journey  {
+.phase_1 h4,
+.phase_1 .journey {
     background-color: lightsteelblue;
 }
 
-.phase_2 .journey, .phase_2 h4 {
+.phase_2 .journey,
+.phase_2 h4 {
     background: rgb(223, 126, 126);
 }
 
-.phase_3 h4, .phase_3 .journey {
+.phase_3 h4,
+.phase_3 .journey {
     background-color: rgb(245, 226, 143);
 }
 
-.phase_4 h4, .phase_4 .journey {
-    background-color:  rgb(80, 201, 161);
+.phase_4 h4,
+.phase_4 .journey {
+    background-color: rgb(80, 201, 161);
 }
 
 footer {
@@ -113,13 +124,13 @@ footer {
     margin-top: -10px;
 }
 
-footer > div {
+footer>div {
     width: 640px;
     padding: 20px;
     background-color: rgb(222, 198, 176);
 }
 
-footer > div:first-child {
+footer>div:first-child {
     margin: 0px 10px 0 5px;
 }
 
@@ -131,11 +142,11 @@ footer h4 {
 }
 
 @media (max-width: 600px) {
-    .phases > div {
+    .phases>div {
         margin: auto;
     }
 
-    header > div {
+    header>div {
         margin: auto;
         padding: 0;
     }
@@ -146,11 +157,11 @@ footer h4 {
 }
 
 @media (max-width: 1350px) {
-    footer > div:first-child {
+    footer>div:first-child {
         margin: 20px auto;
     }
 
-    footer > div:last-child {
+    footer>div:last-child {
         margin: auto;
     }
 }
